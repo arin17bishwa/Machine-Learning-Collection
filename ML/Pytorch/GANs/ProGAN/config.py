@@ -3,12 +3,12 @@ import torch
 from math import log2
 
 START_TRAIN_AT_IMG_SIZE = 128
-DATASET = 'celeb_dataset'
-CHECKPOINT_GEN = "generator.pth"
-CHECKPOINT_CRITIC = "critic.pth"
+DATASET = '/content/drive/MyDrive/Datasets/celeba_hq'
+CHECKPOINT_GEN = "/content/drive/MyDrive/Models/celeb_hq/generator.pth"
+CHECKPOINT_CRITIC = "/content/drive/MyDrive/Models/celeb_hq/critic.pth"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 SAVE_MODEL = True
-LOAD_MODEL = False
+LOAD_MODEL = True
 LEARNING_RATE = 1e-3
 BATCH_SIZES = [32, 32, 32, 16, 16, 16, 16, 8, 4]
 CHANNELS_IMG = 3
